@@ -1,0 +1,133 @@
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git init
+Initialized empty Git repository in X:/desktop/Codingdojo/fundementalz/git/basic_repo/.git/
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git add basic.html
+fatal: Unable to read current working directory: No error
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo
+$ git add .
+fatal: Unable to read current working directory: No error
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo
+$ git init
+fatal: unable to get current working directory: No error
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo
+$ git checkout master
+fatal: Unable to read current working directory: No error
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo
+$ cd master
+bash: cd: master: No such file or directory
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo
+$ git init
+Reinitialized existing Git repository in X:/desktop/Codingdojo/fundementalz/git/basic_repo/.git/
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git add .
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git add basic.html
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git commit
+Vim: Error reading input, exiting...
+Vim: Finished.
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git commit -m "added html"
+[master (root-commit) 298c19b] added html
+ 1 file changed, 21 insertions(+)
+ create mode 100644 basic.html
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git log
+commit 298c19b9598a637ae454f93989b3f8bb2b1874df
+Author: jekrimo <jekrimo@gmail.com>
+Date:   Thu Jun 23 10:20:21 2016 -0600
+
+    added html
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ touch somecss.css
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git remote add origin https://github.com/Jekrimo/basic_repo.git
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git push origin master
+
+Counting objects: 3, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 599 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Jekrimo/basic_repo.git
+ * [new branch]      master -> master
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git add .
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git commit -m "css file add"
+[master 6aebdca] css file add
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 somecss.css
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git add somecss.css
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git commit -m "added css for real"
+On branch master
+nothing to commit, working directory clean
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git commit -m "added css content"
+On branch master
+Changes not staged for commit:
+        modified:   somecss.css
+
+no changes added to commit
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git add .
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git commit -m "added css content"
+[master 00661b5] added css content
+ 1 file changed, 3 insertions(+)
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git add .
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git commit -m "added html content"
+[master de55c41] added html content
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ git push origin master
+Counting objects: 9, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 912 bytes | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+To https://github.com/Jekrimo/basic_repo.git
+   298c19b..de55c41  master -> master
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$ touch copybash.txt
+
+JeKriMo@JeKriMo-PC MINGW64 /x/desktop/Codingdojo/fundementalz/git/basic_repo (master)
+$
